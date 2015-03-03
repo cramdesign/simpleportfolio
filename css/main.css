@@ -1,0 +1,199 @@
+body {
+	background: #eee;
+	text-align: center;
+}
+	
+a {
+	color: #c0392b;
+	text-decoration: none;
+}
+
+p:first-child, .title:first-child {
+	margin-top: 0;
+}
+
+.row {
+	width: 88%;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row .row {
+	width: auto;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+
+
+/* header stuff 
+-------------------------------------------------------------- */
+
+#header {
+	padding: 3em 0;
+}
+
+#masthead {
+	position: relative;
+	z-index: 10;
+}
+
+#masthead .title {
+	margin: 0;
+}
+
+#masthead .title {
+	margin-bottom: 0.5em;
+}
+
+#masthead a {
+	color: #555;
+}
+
+@media (min-width:800px) {
+		
+	#menu .menu > li {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+}
+
+
+
+
+
+/* content stuff 
+-------------------------------------------------------------- */
+
+#content {
+}
+
+#content > .row {
+}
+
+#content .page-header {
+	background: rgba(255,255,255,0.5);
+	padding: 3em 0;
+	margin-bottom: 3em;
+}
+
+#content .content {
+	line-height: 1.75;
+	max-width: 52em;
+}
+
+
+
+/* post styles 
+-------------------------------------------------------------- */
+
+.post {
+	background: white;
+	padding: 3em;	
+	text-align: left;
+}
+
+.post .meta {
+	margin-top: 3em;
+}
+
+.post-gallery {
+/* 	background: rgba(0,255,0,0.1); */
+	margin: 0 -1em;
+}
+
+.post-gallery .post {
+	display: inline-block;
+	width: 200px;
+	vertical-align: middle;
+	margin: 1em;
+	padding: 0;
+}
+
+.post-gallery .post a {
+	display: block;
+	padding: 1em;
+	background: #fff;
+}
+
+.post-gallery .post img {
+	margin-bottom: 0.75em;
+}
+
+.post-gallery .post .title {
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+}
+
+.post figure img {
+	box-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+
+
+
+/* slats
+------------------------------------------ */
+
+.slat {
+	overflow: hidden;
+}
+
+.slat + .slat {
+	margin-top: 5em;
+}
+
+.slat > header,
+.slat > figure {
+	float: left;
+	margin-right: 4%;
+	max-width: 50%;
+}
+
+.slat > article {
+	overflow: hidden;
+	text-align: left;
+}
+
+@media ( max-width:720px ) {
+
+	.slat > figure {
+		float: none;
+		max-width: none;
+		margin-bottom: 1em;
+	}
+	
+}
+
+
+
+
+
+
+/* comments styles 
+-------------------------------------------------------------- */
+
+#comments-wrap {
+	margin-top: 3em;
+	background: #fff;
+}
+
+
+
+/* footer styles 
+-------------------------------------------------------------- */
+
+#footer {
+	padding: 3em 0;
+}
