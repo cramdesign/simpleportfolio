@@ -1,6 +1,6 @@
 /* 
 	Name: drop menu 
-	Version: 1.2.2
+	Version: 1.2.3
 */
 
 .menu, .menu ul {
@@ -28,6 +28,10 @@
 	vertical-align: top;
 }
 
+.menu.vertical > li {
+	display: block;
+}
+
 .menu li {
 	position: relative;
 	text-align: left;
@@ -42,7 +46,7 @@
 	top: 100%;
 }
 
-.drop.menu ul ul {
+.drop.menu ul ul, .drop.menu.vertical ul {
 	left: 100%;
 	top: 0;
 }
@@ -77,8 +81,11 @@
 		content: "\025BE";
 	}
 
+	.drop.menu.vertical > li.parent:hover > a:before,
+	.drop.menu.vertical > li.menu-item-has-children:hover > a:before,
 	.drop.menu li li.parent:hover > a:before,
 	.drop.menu li li.menu-item-has-children:hover > a:before {
+		content: "\025B8";
 		right: 0.5em;
 	}
 

@@ -1,6 +1,5 @@
 body {
-	background: #eee;
-	text-align: center;
+	background: #ddd;
 }
 	
 a {
@@ -14,7 +13,7 @@ p:first-child, .title:first-child {
 
 .row {
 	width: 88%;
-	max-width: 1400px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -34,82 +33,47 @@ img {
 }
 
 
+html {
+	height: 100%;
+	overflow-x: hidden;
+}
 
-/* header stuff 
--------------------------------------------------------------- */
+body {
+	display: table;
+	min-height: 100%;
+	width: 100%;
+}
+
+body > header,
+body > main {
+	display: table-cell;
+	vertical-align: top;
+}
 
 #header {
-	padding: 3em 0;
+	width: 240px;
+	background: #fff;
+	padding: 3em 1em;
 }
 
-#masthead {
-	position: relative;
-	z-index: 10;
+#menu {
+	margin: 1em -1em;
 }
-
-#masthead .title {
-	margin: 0;
-}
-
-#masthead .title {
-	margin-bottom: 0.5em;
-}
-
-#masthead a {
-	color: #555;
-}
-
-@media (min-width:800px) {
-		
-	#menu .menu > li {
-		text-transform: uppercase;
-		font-weight: bold;
-		font-size: 12px;
-	}
-
-}
-
-
-
-
-
-/* content stuff 
--------------------------------------------------------------- */
 
 #content {
-}
-
-#content > .row {
-}
-
-#content .page-header {
-	background: rgba(255,255,255,0.5);
-	padding: 3em 0;
-	margin-bottom: 3em;
-}
-
-#content .content {
-	line-height: 1.75;
-	max-width: 52em;
+	background: #eee;
+	padding: 3em 1em;
+	min-height: 80%;
 }
 
 
 
-/* post styles 
+
+
+/* post gallery stuff
 -------------------------------------------------------------- */
 
-.post {
-	background: white;
-	padding: 3em;	
-	text-align: left;
-}
-
-.post .meta {
-	margin-top: 3em;
-}
-
 .post-gallery {
-/* 	background: rgba(0,255,0,0.1); */
 	margin: 0 -1em;
 }
 
@@ -143,57 +107,3 @@ img {
 
 
 
-/* slats
------------------------------------------- */
-
-.slat {
-	overflow: hidden;
-}
-
-.slat + .slat {
-	margin-top: 5em;
-}
-
-.slat > header,
-.slat > figure {
-	float: left;
-	margin-right: 4%;
-	max-width: 50%;
-}
-
-.slat > article {
-	overflow: hidden;
-	text-align: left;
-}
-
-@media ( max-width:720px ) {
-
-	.slat > figure {
-		float: none;
-		max-width: none;
-		margin-bottom: 1em;
-	}
-	
-}
-
-
-
-
-
-
-/* comments styles 
--------------------------------------------------------------- */
-
-#comments-wrap {
-	margin-top: 3em;
-	background: #fff;
-}
-
-
-
-/* footer styles 
--------------------------------------------------------------- */
-
-#footer {
-	padding: 3em 0;
-}
