@@ -1,4 +1,4 @@
-<figure class="post"><a href="<?php the_permalink(); ?>">
+<figure class="post"><a href="<?php the_permalink(); ?>" class="ajax-popup-link">
 	
 	<div class="poster">
 
@@ -20,3 +20,4 @@
 	</figcaption>
 	
 </a></figure><!-- post -->
+
