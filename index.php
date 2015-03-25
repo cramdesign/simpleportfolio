@@ -12,6 +12,7 @@
 	if( is_archive() ) get_template_part( 'inc/archive', 'header' );
 ?>
 
+<div id="ajax-content" class="row"></div>
 
 <div class="row">
 	
