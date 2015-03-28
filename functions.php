@@ -20,12 +20,7 @@ if ( !function_exists( 'theme_scripts' ) ) : function theme_scripts() {
 		
 	endif;
 	
-	// magnific lightbox
-	wp_enqueue_script( 'init', get_template_directory_uri() . ( '/js/init.js' ) );
-	wp_enqueue_script( 'magnific', get_template_directory_uri() . ( '/js/magnific/magnific.js' ), array('jquery') );
-	wp_enqueue_style( 'magnific', get_template_directory_uri() . ( '/js/magnific/magnific.css' ) );
-	
-	
+
 	// Stylesheets
 	// load stylesheets the WordPress way
 	wp_enqueue_style ( 'norm', get_template_directory_uri() . '/css/norm.css' );

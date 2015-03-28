@@ -1,6 +1,6 @@
 /* 
 	Name: drop menu 
-	Version: 1.2.3
+	Version: 1.2.4
 */
 
 .menu, .menu ul {
@@ -28,10 +28,6 @@
 	vertical-align: top;
 }
 
-.menu.vertical > li {
-	display: block;
-}
-
 .menu li {
 	position: relative;
 	text-align: left;
@@ -46,7 +42,7 @@
 	top: 100%;
 }
 
-.drop.menu ul ul, .drop.menu.vertical ul {
+.drop.menu ul ul {
 	left: 100%;
 	top: 0;
 }
@@ -81,11 +77,8 @@
 		content: "\025BE";
 	}
 
-	.drop.menu.vertical > li.parent:hover > a:before,
-	.drop.menu.vertical > li.menu-item-has-children:hover > a:before,
 	.drop.menu li li.parent:hover > a:before,
 	.drop.menu li li.menu-item-has-children:hover > a:before {
-		content: "\025B8";
 		right: 0.5em;
 	}
 
@@ -97,11 +90,7 @@
 
 @media (max-width:800px) {
 
-	.drop.menu {
-/* 		background: #eee; */
-	}
-	
-	.drop.menu li {
+	.menu li {
 		display: block;
 	}
 	
@@ -109,12 +98,12 @@
 		background: rgba(0,0,0,0.1);
 	}
 	
-	.drop.menu > li > a {
+	.menu > li > a {
 		font-weight: bold;
 		border-top: 1px solid rgba(0,0,0,0.1);
 	}
 	
-	.drop.menu ul {
+	.menu ul {
 		background: none;
 		position: static;
 		visibility: visible;
@@ -122,17 +111,17 @@
 		margin-bottom: 1em;
 	}
 		
-	.drop.menu ul ul {
+	.menu ul ul {
 		margin-bottom: 0;
 		margin-left: 1em;
 	}
 	
-	.drop.menu li li a {
+	.menu li li a {
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 	}
 	
-	.drop.menu li li a:before {
+	.menu li li a:before {
 		content: '\2022\00a0';
 	}
 

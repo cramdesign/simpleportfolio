@@ -1,12 +1,16 @@
-/* Comments 
------------------------------------------- */
+/* 
+	
+	comments.css 
+	version: 1.0.1
+	
+*/
 
 #comments-wrap {
 	padding: 4em 0;
 }
 
 .commentlist {
-	border-top: 1px solid rgba(0,0,0,0.3);
+	border-top: 5px solid rgba(0,0,0,0.1);
 }
 
 .commentlist, .commentlist .children {
@@ -15,19 +19,23 @@
 }
 
 .commentlist .depth-1 {
-	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-bottom: 5px solid rgba(0,0,0,0.1);
 }
 
 .children li {
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
 
-.comment .row {
-	padding: 4em 0;
+.commentlist > .comment {
+	background: rgba(255,255,255,0.5);
 }
 
-.comment #respond {
-	padding: 0 0 2em 0;
+.commentlist > .comment:nth-child(odd) {
+	background: rgba(0,0,0,0.05);
+}
+
+.comment .row {
+	padding: 3em;
 }
 
 .comment .vcard .avatar {
@@ -47,10 +55,23 @@
 	line-height: 1;
 }
 
+.reply-link {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.reply-link a.comment-reply-link {
+	text-decoration: none;
+}
+
 
 
 #respond {
-	padding: 2em 0;
+	padding: 3em;
+}
+
+.comment #respond {
+	padding-top: 0;
 }
 
 #respond label {

@@ -33,31 +33,57 @@ img {
 }
 
 
-html {
-	height: 100%;
-	overflow-x: hidden;
+@media ( min-width: 900px ) {
+	
+	html {
+		height: 100%;
+		overflow-x: hidden;
+	}
+	
+	body {
+		display: table;
+		min-height: 100%;
+		width: 100%;
+	}
+	
+	body > header,
+	body > main {
+		display: table-cell;
+		vertical-align: top;
+	}
+	
+	#header {
+		width: 240px;
+	}
+	
+	#menu {
+		margin: 1em -1em;
+	}
+	
+	#menu .menu li {
+		display: block;
+	}
+	
+	#menu .menu ul {
+		left: 100%;
+		top: 0;
+	}
+
 }
 
-body {
-	display: table;
-	min-height: 100%;
-	width: 100%;
+@media ( max-width: 900px ) {
+	
+	#header {
+		text-align: center;
+	}
+
 }
 
-body > header,
-body > main {
-	display: table-cell;
-	vertical-align: top;
-}
+
 
 #header {
-	width: 240px;
 	background: #fff;
 	padding: 3em 1em;
-}
-
-#menu {
-	margin: 1em -1em;
 }
 
 #content {
