@@ -8,6 +8,7 @@
 <div class="row">
 			
 	<?php
+		
 		// start the loop... make wp look for posts
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 	
